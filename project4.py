@@ -5,6 +5,8 @@ import collections
 import datetime
 from urllib.request import urlretrieve
 
+print("Please wait it takes a minute to process")
+
 #OPEN LOG#
 url = 'https://s3.amazonaws.com/tcmg476/http_access_log'
 local = 'local_copy.log'
@@ -55,6 +57,7 @@ for line in lines:
         dates[a] += 1
       else:
         dates[a] = 1
+        
       if month_f in months:
         months[month_f] += 1
       else:
@@ -102,7 +105,9 @@ print("What was the most-requested file? ", file_sort[len(file_sort)-1])
 x.close()
 
 #FINAL INFORMATION DUMP#
-print("\nHow many requests were made on each day? ", dates)
+print("\nHow many requests were made on each day? (Starting from Oct 24, 1994) ", dates.values())
 print("How many requests were made Per month? ", months)
+print("Last Year Requests: ", requests94)
+print("Total Requests: ", total_requests)
 print("What percentage of the requests were not successful (any 4xx status code)? ", unsuc_percent)
 print("What percentage of the requests were redirected elsewhere (any 3xx codes)? ", redir_percent)
