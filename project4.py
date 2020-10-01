@@ -25,6 +25,21 @@ dates = []
 months = {}
 files = {}
 
+#CREATE MONTH FILES#
+Jan = open("Jan.txt", "w")
+Feb = open("Feb.txt", "w")
+Mar = open("Mar.txt", "w")
+Apr = open("Apr.txt", "w")
+May = open("May.txt", "w")
+Jun = open("Jun.txt", "w")
+Jul = open("Jul.txt", "w")
+Aug = open("Aug.txt", "w")
+Sep = open("Sep.txt", "w")
+Oct94 = open("Oct94.txt", "w")
+Oct95 = open("Oct95.txt", "w")
+Nov = open("Nov.txt", "w")
+Dec = open("Dec.txt", "w")
+
 #MONTH/DATE REQUESTS MADE#
 for line in lines:
   line = line.split(" ")
