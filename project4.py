@@ -42,6 +42,7 @@ Oct95 = open("Oct95.txt", "w")
 Nov = open("Nov.txt", "w")
 Dec = open("Dec.txt", "w")
 
+print("25% done")
 #MONTH/DATE REQUESTS MADE#
 for line in lines:
   line = line.split(" ")
@@ -63,7 +64,7 @@ for line in lines:
       else:
         months[month_f] = 1
         
-
+print("50% done")
 #UNSUCCESSFUL/REDIRECT/LAST YEAR REQUESTS#
 for line in lines:   
    unsuc_count +=1
@@ -84,7 +85,8 @@ for line in lines:
       
 unsuc_percent = unsuc_count / total_requests
 redir_percent = redir_count / total_requests
-      
+
+print("75% done")      
 #LEAST/MOST REQUESTED FILES#      
 for line in lines:
   line = line.split(" ")
@@ -104,6 +106,7 @@ print("What was the most-requested file? ", file_sort[len(file_sort)-1])
 
 x.close()
 
+print("Finished")
 #FINAL INFORMATION DUMP#
 print("\nHow many requests were made on each day? (Starting from Oct 24, 1994) ", dates.values())
 print("How many requests were made Per month? ", months)
