@@ -17,11 +17,11 @@ lines = x.readlines()
 #VARIABLES#
 total_requests = 0
 requests94 = 0
-redirect_count = 0
+redir_count = 0
 unsuc_count = 0
 unsuc_percent = 0
 redir_percent = 0
-dates = {}
+dates = []
 months = {}
 files = {}
 
