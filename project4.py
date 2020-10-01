@@ -21,7 +21,7 @@ redir_count = 0
 unsuc_count = 0
 unsuc_percent = 0
 redir_percent = 0
-dates = []
+dates = {}
 months = {}
 files = {}
 
